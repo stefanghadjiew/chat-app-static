@@ -1,0 +1,2 @@
+
+The app has user authentication and authorization.I use 3 different documents stored in Mongo - user,messages and friends.I need to dive into WebSockets in order to proceed further(creating unique rooms).For now i removed the add-friends functionality(although the components and routes are still present).I have 2 user accounts (herokutest@gmail.com/herokutest herokutest@abv.bg/herokutest1) that have some messages between them.Check them out!Also using Material UI.
