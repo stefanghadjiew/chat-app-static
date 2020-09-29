@@ -27,20 +27,22 @@ function App() {
   
 
   return (
-    <Router>
-      <Navbar
-      userId={isUserLogged.user.id}
-      token ={isUserLogged.user.token} 
-      isLogged={isUserLogged.isLogged} 
-      username={isUserLogged.user.username} 
-      logout={logout}
-      />
-      <Main
-      userId = {isUserLogged.user.id}
-      token ={isUserLogged.user.token} 
-      isLogged={isUserLogged.isLogged} 
-      userIsLogged={userIsLogged}/>
-    </Router>
+    <div className="app_wrapper">
+      <Router>
+        <Navbar
+        userId={isUserLogged.user.id}
+        token ={isUserLogged.user.token} 
+        isLogged={isUserLogged.isLogged} 
+        username={isUserLogged.user.username} 
+        logout={logout}
+        />
+        <Main
+        userId = {isUserLogged.user.id}
+        token ={isUserLogged.user.token} 
+        isLogged={isUserLogged.isLogged} 
+        userIsLogged={userIsLogged}/>
+      </Router>
+    </div>
    );
 }
 

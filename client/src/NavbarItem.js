@@ -36,7 +36,7 @@ const NavbarItem = ({btnText,logout}) => {
     if (btnText === "Home") {
         return (
             <li className="navbar-nav-item">
-                <Link to="/">
+                <Link to="/chat-app-static">
                     <Tooltip title={btnText} >
                         <IconButton color="secondary">
                             <HomeRounded className="navbar_icon_btn" color="secondary"/>
