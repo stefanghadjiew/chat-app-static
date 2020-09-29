@@ -5,7 +5,7 @@ import Messages from "./Messages";
 
 
 const Home = ({ isLogged,token,userId }) => {
-    /* const MongoAtlas = "http://localhost:3001/" */
+    const herokuApi = "https://serene-anchorage-94249.herokuapp.com/"
     const [text,setText] = useState({
         text: "",
     })
@@ -21,7 +21,7 @@ const Home = ({ isLogged,token,userId }) => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const url = `api/user/${userId}/messages`
+            const url = `${herokuApi}api/user/${userId}/messages`
             const res = await fetch(url,{
                 method : "POST",
                 headers: {

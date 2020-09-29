@@ -14,7 +14,7 @@ const initialState = {
 
 
 const Authentication = ({register,submitBtnText,userIsLogged,history,...props}) => {
-   /*  const MongoAtlas = "http://localhost:3001/" */
+    const herokuApi = "https://serene-anchorage-94249.herokuapp.com/" 
     const [state,setState] = useState(initialState)
     const [err,setErr] = useState({
         has:false,
@@ -34,7 +34,7 @@ const Authentication = ({register,submitBtnText,userIsLogged,history,...props}) 
     const handleSubmit = async (e) => {
        e.preventDefault()
        
-            const url = `api/auth/${submitBtnText}`
+            const url = `${herokuApi}api/auth/${submitBtnText}`
             const res = await fetch(url,{
                 method : "POST",
                 headers : {
