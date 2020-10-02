@@ -49,7 +49,7 @@ const Authentication = ({register,submitBtnText,userIsLogged,history,...props}) 
             } else {
                 userIsLogged(userInfo,true);
                 returnToInitialState();
-                history.push("/")
+                history.push("/chat-app-static")
             }
            
         } 
